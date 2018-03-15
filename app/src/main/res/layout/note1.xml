@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_weight="8"
+        app:cardElevation="12dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/note1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="note_title"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="2018-01-05"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:id="@+id/note1_time"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/note1_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="note_content"
+            android:layout_marginTop="35dp"
+            android:gravity="top"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/orc_btn"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorGray"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/camera"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <Button
+                android:id="@+id/note1_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <Button
+                android:id="@+id/note1_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

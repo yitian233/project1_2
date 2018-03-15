@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>日记</item>
+        <item>笔记</item>
+        <item>语音</item>
+        <item>卡片</item>
+        <item>DDL</item>
+    </string-array>
+</resources>
